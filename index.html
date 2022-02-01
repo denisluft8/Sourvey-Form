@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+
+<header class=header>
+    <h1 id="title"> Pizza Delivery</h1>
+    <p id="description">Choose your crust, toppings and drink.</p>
+</header>
+<form id="survey-form">
+    <div class="form-group">
+        <label id="name-label" for="name">Name:</label>
+        <input id="name" type="text" name="name" placeholder="Enter your Name" required>
+    </div>
+    <div class="form-group">
+        <label id="email-label" for="email">E-mail:</label>
+        <input id="email" type="email" name="email" placeholder="Enter your e-mail" required>
+    </div>
+    <div class="form-group">
+        <label id="adress-label" for="adress">Adress:</label>
+        <input id="adress" type="text" name="adress" placeholder="Enter your adress">
+    </div>
+    <div class="form-group">
+        <label id="number-label" for="number">How many pizzas do you want?</number>
+            <input id="number" type="number" name="number" min="1" max="10" placeholder="Enter the number of pizzas"
+                required>
+    </div>
+    <div class="form-group">
+        <p>Size of the pizza:</p>
+        <select id="dropdown" name="size" required>
+            <option disabled selected value>Select the size of your pizza</option>
+            <option value="small">Small: 10 inches with 6 slices</option>
+            <option value="medium">Medium: 12 inches with 8 slices</option>
+            <option value="large">Large: 14 inches with 10 slices</option>
+            <option value="extra">Extra-Large: 18 inches with 12 slices</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="crust">Type of the Crust:
+            <input name="crust" type="radio" class="input-radio" value="normal">Normal
+            <input name="crust" type="radio" class="input-radio" value="gluten-free">Glúten Free
+        </label>
+    </div>
+    <div class="form-group">
+        <label for="toppings">Choose your toppings:
+            <input name="cheese" type="checkbox" class="input-checkbox" value="cheese">Chesse
+            <input name="veggie" type="checkbox" class="input-checkbox" value="veggie">Veggie
+            <input name="pepperoni" type="checkbox" class="input-checkbox" value="pepperoni">Pepperoni
+            <input name="margherita" type="checkbox" class="input-checkbox" value="margherita">Margherita
+            <input name="hawaiian" type="checkbox" class="input-checkbox" value="hawaiian">Hawaiian
+            <input name="sausage" type="checkbox" class="input-checkbox" value="sausage">Sausage
+        </label>
+    </div>
+    <div class="form-group">
+        <label for="drink">Choose your drink:
+            <input name="drink" type="radio" class="input-radio" value="pepsi">Pepsi
+            <input name="drink" type="radio" class="input-radio" value="coke">Coke
+            <input name="drink" type="radio" class="input-radio" value="apple-juice">Apple Juice
+            <input name="drink" type="radio" class="input-radio" value="orange-juice">Orange Juice
+            <input name="drink" type="radio" class="input-radio" value="water">Water
+            <input name="drink" type="radio" class="input-radio" value="no-drink">No Drink
+        </label>
+    </div>
+    <div class="form-group">
+        <label id="observation-input" for="observation">
+            <p>Any observation?</p>
+            <textarea id="observation" type="text" name="observation" placeholder="Enter your observation here">
+      </textarea>
+        </label>
+    </div>
+    <div class="form-group">
+        <button id="submit" type="submit" class="submit-button">Submit your order</button>
+    </div>
+</form>
+
+</html>
